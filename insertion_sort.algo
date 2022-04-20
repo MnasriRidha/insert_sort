@@ -1,0 +1,22 @@
+ALGORITHM insertion_Sort
+
+VAR
+   tab:ARRAY_OF n integer;
+   key,i,j: INTEGER; 
+BEGIN
+    FOR ( i =1 , i < n , i++)
+    {
+            key=tab[i];
+            j=i-1;
+        
+        while (j>=0 and arr[j]>key)
+        {
+            tab[j+1]=tab[j]
+            j=j-1;
+        }
+        tab[j+1]=key;
+    }
+    END_FOR
+
+END
+
